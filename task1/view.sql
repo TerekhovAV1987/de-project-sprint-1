@@ -4,7 +4,7 @@ from production.users;
 
 create view analysis.orderitems as
     select *
-from production.orderitems
+from production.orderitems;
 
 create view analysis.orderstatuses as
     select *
