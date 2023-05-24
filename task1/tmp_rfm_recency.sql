@@ -1,9 +1,9 @@
 with orders as (
     select user_id,
 		max(order_ts) as last_order
-    from analysis.orders o
+    from analysis.orders
     where extract(year from order_ts) = 2022
-    and o.status = 4
+    and status = 4
     group by user_id
     ),
 users as (
